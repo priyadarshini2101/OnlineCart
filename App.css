@@ -1,0 +1,163 @@
+
+#App-container{
+  width:100%;
+  height: 100%;
+}
+
+
+#App-container .header{
+  background-color: blue;
+  height: 50px;
+  
+}
+
+#navId{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#navId >div{
+  display: inline-block;
+}
+
+#navId > div a{
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+
+#navId > div a.active{
+  background-color: red;
+  height:20px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#app-store{
+  width: 100%;
+  /* height: calc(100%-100px); */
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  padding: 20px;
+  
+}
+
+.store-item{
+  width: 350px;
+  height: 350px;
+  margin-left: 30px;
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+}
+
+.store-item img{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  
+
+}
+
+.store-item > div:first-child{
+  width: 200px;
+  height: 200px;
+}
+
+.store-item  div:first-child img{
+  width: 200px;
+  height: 200px;
+ 
+}
+
+.store-item  div:nth-child(2) > div:last-child{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100px;
+  margin-left: 20px;
+}
+
+.store-item >div:last-child{
+  height: 100px;
+  width: 100px;
+}
+
+
+.cart-inner-circle{
+  display: flex;
+  flex-direction: row;
+  width:20px;
+  height: 20px;
+  color: white;
+  font-size:small
+  
+  
+}
+.ct{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  width:50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid white;
+  margin-left: 40px;
+  font-size: 10px;
+  color:white;
+  align-items: center;
+
+}
+
+.btn btn-primary{
+  width:100px;
+  height:50px;
+}
+/* .btn btn-primary{
+  flex-basis: 100%;
+  width:100%;
+  text-align: center;
+} */
+
+.store-item div.actions{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.store-item div.actions > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.store-item div.actions > div:last-child button{
+  width: 80%;
+  /* margin: 0px 10px; */
+}
+
+.store-item div.actions  > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.store-item div.actions  > div > div span{
+ font-size: 20px;
+ padding: 10px;
+}
+
+
